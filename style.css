@@ -22,6 +22,9 @@ a {
 ul {
   list-style: none;
 }
+.saif {
+  font-size: 3rem;
+}
 
 .kick-pad,
 .snare-pad,
@@ -38,6 +41,9 @@ ul {
 
 .snare-pad {
   background: rgb(255, 145, 125);
+  box-shadow: -1px 1px 2px rgba(141, 80, 66, 0.2),
+    1px -1px 2px rgba(141, 80, 66, 0.2), -1px -1px 2px rgba(255, 190, 158, 0.9),
+    1px 1px 3px rgba(141, 80, 66, 0.9);
 }
 
 .hihat-pad {
