@@ -1,0 +1,264 @@
+/* Global Style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #212121;
+  color: #fff;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+.saif {
+  margin-top: 0.5rem;
+  font-size: 3rem;
+}
+
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+  width: 4rem;
+  height: 4rem;
+  margin: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background: rgb(138, 207, 253);
+}
+
+.snare-pad {
+  background: rgb(255, 145, 125);
+}
+
+.hihat-pad {
+  background: rgb(255, 151, 232);
+}
+
+.kick-pad.active {
+  background: rgb(83, 180, 245);
+}
+.snare-pad.active {
+  background: rgb(207, 97, 78);
+}
+.hihat-pad.active {
+  background: rgb(223, 79, 191);
+}
+
+.sequencer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.kick-track,
+.snare-track,
+.hihat-track {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.kick,
+.snare,
+.hihat {
+  display: flex;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 0rem 2rem;
+}
+
+.controls button {
+  padding: 1rem;
+  border: none;
+  background: rgb(82, 82, 82);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.pad {
+  transition: all 0.5s ease;
+}
+
+.play {
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: rgb(87, 87, 87);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.mute.active {
+  background: rgb(190, 190, 190);
+}
+
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+.tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: rgb(80, 80, 80);
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.tempo p {
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: center;
+}
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .kick-track,
+  .snare-track,
+  .hihat-track {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+  .kick,
+  .snare,
+  .hihat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .controls {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    margin: 0rem 2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .saif {
+    font-size: 2rem;
+  }
+
+  .kick-track,
+  .snare-track,
+  .hihat-track {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+  .kick-pad,
+  .snare-pad,
+  .hihat-pad {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+  }
+
+  .kick,
+  .snare,
+  .hihat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .controls {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    margin: auto;
+    font-size: 70%;
+  }
+  .controls button {
+    padding: 0.3rem;
+    border: none;
+    background: rgb(82, 82, 82);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  select {
+    padding: 0.3rem;
+    font-size: 1rem;
+  }
+  .tempo {
+    width: 80%;
+  }
+
+  .play {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    background: rgb(87, 87, 87);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1.5rem;
+  }
+  .tempo-slider {
+    padding: 0.1rem;
+    -webkit-appearance: none;
+
+    width: 100%;
+    position: relative;
+    background: rgb(80, 80, 80);
+    cursor: pointer;
+    border-radius: 1rem;
+  }
+  .tempo p {
+    font-size: 1.5rem;
+    margin: rem;
+    text-align: center;
+  }
+} ;
